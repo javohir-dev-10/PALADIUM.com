@@ -1,0 +1,281 @@
+@import url(https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;800;900&display=swap);
+
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+button,
+input {
+    outline: none;
+    border: none;
+}
+
+a {
+    color: inherit;
+}
+
+.container {
+    max-width: 1150px;
+    padding-inline: 20px;
+    margin-inline: auto;
+}
+
+header {
+    box-shadow: 0px 1px 10px 0px #0000001A;
+    background-color: #fff;
+}
+
+header .container .navbar {
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .container .navbar .nav_left .logo {
+    font-size: 39.06px;
+    font-weight: 600;
+    line-height: 48.28%;
+    text-align: center;
+    color: #FF5300;
+}
+
+header .container .navbar .nav_left .logo span {
+    color: #373737;
+}
+
+header .container .navbar .nav_right {
+    display: flex;
+    align-items: center;
+    width: 79.87%;
+    justify-content: space-between;
+}
+
+header .container .navbar .nav_right .sun {
+    font-size: 22px;
+}
+
+header .container .navbar .nav_right .menu {
+    display: none;
+}
+
+header .container .navbar .nav_right .sun i:last-child {
+    display: none;
+}
+
+header .container .navbar .nav_right ul {
+    display: flex;
+    align-items: center;
+    gap: 38px;
+}
+
+header .container .navbar .nav_right ul li {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24.72px;
+    text-align: center;
+    color: #373737;
+    transition: .1s linear;
+
+    &:hover {
+        color: #FF5300;
+    }
+}
+
+main .head_top {
+    background-color: #FFF7F4;
+}
+
+main .head_top .container .head_inside {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 153px 153px;
+}
+
+
+
+main .head_top .container .head_inside .head_left {
+    height: 353px;
+    margin-right: 35px;
+}
+
+main .head_top .container .head_inside .head_left h1 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 59.33px;
+    color: #373737;
+}
+
+main .head_top .container .head_inside .head_left h1 span {
+    color: #FF5300;
+}
+
+main .head_top .container .head_inside .head_left p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24.1px;
+    color: #7B7B7B;
+    padding-block: 11px 40px;
+    width: 493px;
+}
+
+main .head_top .container .head_inside .head_left a {
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 4px 5px 15px 0px #FF530066;
+    background-color: #FF5300;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24.72px;
+    color: #FFFFFF;
+    transition: color .2s linear;
+
+    &:hover {
+        box-shadow: none;
+        color: #FF5300;
+        border: 2px solid #FF5300;
+        background: #fff;
+    }
+
+}
+
+
+/* main .head_top .container .head_inside .head_right {
+    width: 639px;
+    height: 429px;
+
+}
+
+
+main .head_top .container .head_inside .head_right img {
+    width: 100%;
+    height: 100%;
+} */
+
+
+main .head_top .container .head_inside .head_icon {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 175px;
+    position: absolute;
+    right: 0;
+    top: 300px;
+}
+
+
+main .head_top .container .head_inside .head_icon a {
+    background-color: #fff;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: #FF5300;
+    box-shadow: 0px 1px 10px 0px #0000001A;
+    transition: .15s;
+
+    &:hover {
+        background-color: #FF5300;
+        color: #fff;
+        box-shadow: 4px 5px 15px 0px #FF530066;
+    }
+}
+
+
+/* tablet */
+
+@media screen and (max-width: 1023px) {
+    header .container .navbar {
+        height: 80px;
+    }
+
+    header .container .navbar .nav_left .logo {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 24.72px;
+
+    }
+
+    header .container .navbar .nav_right ul {
+        gap: 25px;
+    }
+
+    header .container .navbar .nav_right ul li {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24.1px;
+        flex-shrink: 0;
+    }
+
+    header .container .navbar .nav_right .sun i:first-child {
+        display: none;
+    }
+
+    header .container .navbar .nav_right .sun i:last-child {
+        display: flex;
+    }
+
+    main .head_top .container .head_inside .head_left h1 {
+        font-size: 39.06px;
+        font-weight: 600;
+        line-height: 48.28px;
+    }
+
+    main .head_top .container .head_inside .head_left p {
+        width: 348px;
+        height: 79px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24.1px;
+        margin-bottom: 30px;
+
+    }
+    main .head_top .container .head_inside .head_left p span{
+        display: none;
+    }
+
+    
+}
+
+/* phone */
+
+
+@media screen and (max-width: 767px) {
+    header .container .navbar {
+        height: 50px;
+    }
+
+    header .container .navbar .nav_right ul {
+        display: none;
+    }
+
+    header .container .navbar .nav_left .logo {
+        margin-right: 17.24%;
+    }
+
+    header .container .navbar .nav_right .sun i:last-child {
+        margin-left: 60px;
+    }
+
+    header .container .navbar .nav_right .menu i {
+        font-size: 24px;
+    }
+}
